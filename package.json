@@ -1,0 +1,15 @@
+{
+  "name": "zaozhuang-yizhong-3d-rebuild",
+  "version": "1.0.0",
+  "private": true,
+  "description": "枣庄一中三维校园漫游",
+  "main": "desktop/main.cjs",
+  "scripts": {
+    "start": "node site/server.cjs",
+    "desktop": "electron .",
+    "build:windows": "node scripts/package-windows.cjs"
+  },
+  "devDependencies": {
+    "electron": "45.0.0"
+  }
+}

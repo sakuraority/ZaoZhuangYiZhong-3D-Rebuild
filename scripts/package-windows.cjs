@@ -1,0 +1,12 @@
+const fs=require('node:fs'),path=require('node:path');
+if(process.platform!=='win32'||process.arch!=='x64')throw new Error('Please build on Windows x64.');
+const root=path.resolve(__dirname,'..'),electron=path.dirname(require.resolve('electron/package.json')),runtime=path.join(electron,'dist');
+const out=path.join(root,'dist','重游校园-Windows-x64');
+if(fs.existsSync(out))throw new Error('Output exists. Move the previous dist folder before building.');
+fs.cpSync(runtime,out,{recursive:true});
+fs.renameSync(path.join(out,'electron.exe'),path.join(out,'重游校园.exe'));
+const app=path.join(out,'resources','app');fs.mkdirSync(path.join(app,'desktop'),{recursive:true});
+fs.copyFileSync(path.join(root,'desktop','main.cjs'),path.join(app,'desktop','main.cjs'));
+fs.cpSync(path.join(root,'site'),path.join(app,'site'),{recursive:true});
+fs.writeFileSync(path.join(app,'package.json'),JSON.stringify({name:'campus-reunion',version:'1.0.0',main:'desktop/main.cjs',private:true},null,2));
+console.log('Built: dist/重游校园-Windows-x64');
