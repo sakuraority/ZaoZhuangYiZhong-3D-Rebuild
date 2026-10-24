@@ -15,4 +15,4 @@ Three.js 0.180.0 及其 OrbitControls 采用 MIT 许可证。Copyright 2010–20
 - 秋：Pianoboy 高至豪《The truth that you leave》
 - 冬：matryoshka《sacred play secret place》
 
-歌曲文件为用户提供的压缩副本，权利归相关权利人所有。本仓库的公开不构成这些歌曲的开放许可或再授权。如需自行分发或用于其他用途，应另行取得相应授权。
+歌曲文件为压缩副本，权利归相关权利人所有。本仓库的公开不构成这些歌曲的开放许可或再授权。如需自行分发或用于其他用途，应另行取得相应授权。
