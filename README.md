@@ -16,7 +16,7 @@
 
 ## Windows 直接运行
 
-在仓库右侧 **Releases** 下载 `云游一中.zip`（发布后可用），完整解压到一个新文件夹，运行 `重游校园.exe`。请保留同文件夹下的 resources、locales、DLL 等运行文件。
+在仓库右侧 **Releases** 下载 `YunYouYiZhong.zip`，完整解压到一个新文件夹，运行 `重游校园.exe`。请保留同文件夹下的 resources、locales、DLL 等运行文件。
 
 ## 从源码预览
 
